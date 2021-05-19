@@ -8,16 +8,19 @@ from telegram.ext import *
 print ("Bot session has begun")
 
 # Adding a start command so users and start a converstation
-def start_command(update, context):
+def distro_command(update, context):
 
-    # Replying to the start command, with a simple string
-    update.message.reply_text('Welcome to the Selendrian Blockchain Bot')
+    # Replying to the distro command, with a simple string
+    update.message.reply_text('Currently there are no active airdrops on my Radar! \n\nYou can visit "airdrop.selendra.org" for more information')
 
 # Creating a help command 
 def help_command(update, context):
 
     # Displaying all useful commands
-    update.message.reply_text('Here is a list of helpful commands: \n "/start" has been done!')
+    update.message.reply_text('Here is a list of helpful commands: \n\n -/airdrop Up to date info on airdrops\n-/distro Airdrop disrobution status\n')
+
+def airdrop_command(update, context):
+    update.message.reply_text('Hey there watch your head, selendra airdrops are inbound. To chek on the airdrop disrobution status "/distro" to get any more information about the airdrop "aridrop.selendra.org".')
 
 def handle_message(update, context):
     text = str(update.message.text).lower()
@@ -36,11 +39,13 @@ def main():
     updater = Updater(keys.API_KEY, use_context=True)
     # variable for output disbatching
     dp = updater.dispatcher
-
-    # Linking /start to the start_command
-    dp.add_handler(CommandHandler("start", start_command))
+    
     # linking /help to the help_command
     dp.add_handler(CommandHandler("help", help_command))
+    # linking /distro to the help_command
+    dp.add_handler(CommandHandler("distro", distro_command))
+    # linking /airdrop to the help_command
+    dp.add_handler(CommandHandler("airdrop", airdrop_command))
 
     dp.add_handler(MessageHandler(Filters.text, handle_message))
 
