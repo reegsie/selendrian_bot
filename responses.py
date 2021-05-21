@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 from datetime import datetime
+from long_str import *
 
 def main_listener(input_text):
     
@@ -10,13 +11,19 @@ def main_listener(input_text):
     # tag = user_message[0:14]
     # Saves the str after char 14 for the user query to the bot
     # user_query = user_message[14:65]
-
-    # Greetings
-    if "hello" in user_message:
-        return "Hi welcome to the Selendra Blockchain community if you need help try '/help'"
-    if "hi" in user_message:
-        return "Hi welcome to the Selendra Blockchain community if you need help try '/help'"
+    
+    #what is
+    if "what" in user_message:
+        if "is" in user_message:
+            if "selendra" in user_message:
+                return "Selendra is a multi-sharding Blockchain network focus on empowering developers to build real world Apps/Dapps for Web 3.0."
+    
     # Price & Listing queries
+    if "price" in user_message:
+        if "what" in user_message:
+            return "We don't encourage conversation about price in the community, howver we do have a chat specifically for Selendra price discussion. 'https://t.me/seltrade' "
+    else: pass
+    
     if "not" in user_message:
         if "listing" in user_message:
             pass
@@ -30,7 +37,7 @@ def main_listener(input_text):
         pass 
     
     # Recieved no airdrop
-    if "receive" in user_message:
+    if "received" in user_message:
         if "nothing" in user_message:
             return "Hello, there could be a number of reasons why you haven't received your airdrop yet.\n \n1. Make sure you have filled in all of your information correctly when applying for the airdrop. (You can re-do the form if you have input false information.)\n \n2. Airdrops distribution may still be running use '/distro' to see the active distribution status."
         else:
@@ -49,10 +56,15 @@ def main_listener(input_text):
     # SC query
     if "sc" in user_message:
         if "please" in user_message:
-            return ""
+            return "0x288d3A87a87C284Ed685E0490E5C4cC0883a060a"
         else:
             pass     
-    
+    if "sc" in user_message:
+        if "what" in user_message:
+            if "is" in user_message:
+                return "Here is the secure contract address: 0x288d3A87a87C284Ed685E0490E5C4cC0883a060a"
+            else:
+                pass 
     # Exchange the token
     if "exchange" in user_message:
         if "token" in user_message:
@@ -62,6 +74,13 @@ def main_listener(input_text):
     if "officially" in user_message:
         if "listed" in user_message: 
             return "Token won't be listed on any exchange until around late Ausgust or worst Nov 2021. The reason is that we more p[eople to b e able to claimn SEL Airdrop. If this is too long for anyone to wait, feel free to brn your SEL :) \n \n$SEL will be on #Pancakeswap, #BitrielSwap, #LAToken, and #Binance. We will work with a small number of exchanges."
+    else:
+        pass
+    if "when" in user_message:
+        if "listed" in user_message: 
+            return "Token won't be listed on any exchange until around late Ausgust or worst Nov 2021. The reason is that we more p[eople to b e able to claimn SEL Airdrop. If this is too long for anyone to wait, feel free to brn your SEL :) \n \n$SEL will be on #Pancakeswap, #BitrielSwap, #LAToken, and #Binance. We will work with a small number of exchanges."
+    else:
+        pass
     
     # Forgot password
     if "password" in user_message:
@@ -70,6 +89,25 @@ def main_listener(input_text):
         else: 
             pass
         
+    # Airdrop query
+    if "airdrop" in user_message: 
+        if "when" in user_message: 
+            return "We will conduct 3 airdrops, each drop will have 6 sessions of 31,415,927 SEL tokens over the span of 4.5 years. Each session will last as long as 3 months. Use '/distribution' to see active airdrops, use '/airdrop' for more info on airdrops."
+        
+    # withdraw messages
+    if "how" in user_message:
+        if "withdraw" in user_message:
+            return "$SEL does not currently support withdrawls, in the mean time you can:\n\n- Invite your friends to join the community. Tell them to go claim SEL on airdrop.selendra.org\n- Discuss ideas and think of way to build dapps on Selendra by using docs.selendra.org, if you are a developer."
+        else: 
+            pass   
+    
+    # Random messages
+    if "when" in user_message:
+        if "moon" in user_message:
+            return "Ladies and gentlman please fasten your seatbelts and siten your caps, we're just starting our engines, take off in 3... 2..."  
+    else: 
+        pass
+    
     if "left" in user_message:
         return "Group_Message has been logged."
     else:
@@ -77,3 +115,57 @@ def main_listener(input_text):
 
 # Notes for future integration
 # > Add link denial | if the link doesn't come from admin, delete it
+
+    # what
+    if "what" in user_message:
+        if "total" in user_message:
+            if "supply" in user_message:
+                return benefits
+        if "tokens" in user_message:
+            if "distribution" in user_message:
+                if "model" in user_message:
+                    return benefits
+        if "benefits" in user_message:
+            if "from" in user_message:
+                if "project" in user_message:
+                    return benefits
+        if "algorithm" in user_message:
+            if "blockchain" in user_message:
+                if "use" in user_message:
+                    return algorithm_text
+            if "selendra" in user_message:
+                if "use" in user_message:
+                    return algorithm_text
+        if "transaction" in user_message:
+            if "fees" in user_message:
+                return trans_fee
+        if "consensus" in user_message:
+            if "roles" in user_message:
+                return consensus     
+    else:
+        pass
+    
+    # how
+    if "how" in user_message:
+        if "does" in user_message:
+            if "reward" in user_message:
+                return benefits
+        if "do" in user_message:
+            if "reward" in user_message:
+                return benefits
+        if "tokens" in user_message:
+            if "distributed" in user_message:
+                return benefits
+    else:
+        pass
+    # Where 
+    
+    if "where" in user_message:
+        if "find" in user_message:
+            if "info" in user_message:
+                return more_info
+            if "information" in user_message:
+                return more_info
+    else:
+        pass
+    
