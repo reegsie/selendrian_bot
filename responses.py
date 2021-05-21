@@ -108,6 +108,11 @@ def main_listener(input_text):
     else: 
         pass
     
+    #transaction info
+    if "transaction" in user_message:
+        if "fee" in user_message:
+            return trans_fee
+    
     if "left" in user_message:
         return "Group_Message has been logged."
     else:
@@ -139,9 +144,19 @@ def main_listener(input_text):
         if "transaction" in user_message:
             if "fees" in user_message:
                 return trans_fee
+        if "transaction" in user_message:
+            if "fee" in user_message:
+                return trans_fee
         if "consensus" in user_message:
             if "roles" in user_message:
-                return consensus     
+                return consensus
+            if "role" in user_message:
+                return consensus
+        if "governance" in user_message:
+            if "roles" in user_message:
+                return governance
+            if "role" in user_message:
+                return governance
     else:
         pass
     
@@ -158,8 +173,8 @@ def main_listener(input_text):
                 return benefits
     else:
         pass
-    # Where 
     
+    # Where 
     if "where" in user_message:
         if "find" in user_message:
             if "info" in user_message:
