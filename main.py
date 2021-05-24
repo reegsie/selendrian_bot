@@ -24,7 +24,7 @@ def distro_command(update, context):
 # Creating a help command 
 def help_command(update, context):
     # Displaying all useful commands
-    update.message.reply_text('Here is a list of helpful commands: \n\n /airdrop Up to date info on airdrops\n\n/distribution Airdrop Disribution status\n\n/about About Selendra\n\n/whitepaper docs and official whitepaper\n\n/bitriel download bitriel and how to use tutorial\n\n/price join the official price dicussion group\n\n/faq FAQ section')
+    update.message.reply_text('Here is a list of helpful commands: \n\n /airdrop Up to date info on airdrops\n\n/distribution Airdrop Disribution status\n\n/about About Selendra\n\n/whitepaper docs and official whitepaper\n\n/docs This is the link to our official github page\n\n/bitriel download bitriel and how to use tutorial\n\n/price join the official price dicussion group\n\n/faq FAQ section')
 
 # Airdrop_command 
 def airdrop_command(update, context):
@@ -33,6 +33,9 @@ def airdrop_command(update, context):
 # white_paper command
 def white_command(update, context):
     update.message.reply_text(white_paper)
+    
+def docs_command(update, context):
+    update.message.reply_text(docs)
 
 # bitriel command
 def bitriel_command(update, context):
@@ -77,6 +80,8 @@ def main():
     dp.add_handler(CommandHandler("bitriel", bitriel_command))
     # FAQ Section handler
     dp.add_handler(CommandHandler("price", price_command))
+    # docs handler
+    dp.add_handler(CommandHandler("docs", docs_command))
     
     dp.add_handler(MessageHandler(Filters.text, handle_message))
     dp.add_error_handler(error)
