@@ -32,7 +32,7 @@ def main_listener(input_text):
     # Recieved no airdrop
     if "received" in user_message:
         if "nothing" in user_message:
-            return "Hello, there could be a number of reasons why you haven't received your airdrop yet.\n \n1. Make sure you have filled in all of your information correctly when applying for the airdrop. (You can re-do the form if you have input false information.)\n \n2. Airdrops distribution may still be running use '/distro' to see the active distribution status."
+            return "Hello, there could be a number of reasons why you haven't received your airdrop yet.\n \n1. Make sure you have filled in all of your information correctly when applying for the airdrop. (You can re-do the form if you have input false information.)\n \n2. Airdrops Distribution may still be running use '/distro' to see the active distribution status."
         else:
             pass
     if "airdrop" in user_message:
