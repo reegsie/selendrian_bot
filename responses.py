@@ -258,10 +258,10 @@ def main_listener(input_text):
         if "help" in user_message:
             return "You can use /help for a list of helpful commands, or ask your question here and I will do my best to answer it."
         
-    if len(user_message) <= 9:
+    if len(user_message) <= 11:
         if "consensus" in user_message:
             return consensus
     
-    if len(user_message) <= 11:
+    if len(user_message) <= 12:
         if "governence" in user_message:
             return governance
