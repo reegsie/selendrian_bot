@@ -219,3 +219,11 @@ def main_listener(input_text):
     if len(user_message) <= 2:
         if "hi" in user_message:
             return "Hi welcome to the Selendra Blockchain Community, /help if you need help!"
+        
+    if "is" in user_message:
+        if "selendra" in user_message:
+            return "Yes it is, to read more '/whitepaper'"
+        if "sel" in user_message:
+            return "Yes it is, to read more '/whitepaper'"
+        else:
+            pass
