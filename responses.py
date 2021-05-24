@@ -15,9 +15,12 @@ def main_listener(input_text):
     
     #what is
     if "what" in user_message:
-        if "is" in user_message:
-            if "selendra" in user_message:
-                return "Selendra is a multi-sharding Blockchain network focus on empowering developers to build real world Apps/Dapps for Web 3.0."
+        if "price" in user_message:
+            pass
+        else:
+            if "is" in user_message:
+                if "selendra" in user_message:
+                    return "Selendra is a multi-sharding Blockchain network focus on empowering developers to build real world Apps/Dapps for Web 3.0."
     
     # Price & Listing queries
     if "price" in user_message:
