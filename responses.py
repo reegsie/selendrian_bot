@@ -81,20 +81,25 @@ def main_listener(input_text):
     # Forgot password
     if "password" in user_message:
         if "forgot" in user_message:
-            return "Once you have lost your 12 word passphrase in bitriel, you won't be able to recover your account afterwards."
+            return forgot_pass
         else: 
             pass
         
     # Airdrop query
     if "airdrop" in user_message: 
         if "when" in user_message: 
-            return "We will conduct 3 airdrops, each drop will have 6 sessions of 31,415,927 SEL tokens over the span of 4.5 years. Each session will last as long as 3 months. Use '/distribution' to see active airdrops, use '/airdrop' for more info on airdrops."
+            return "We will conduct 3 airdrops, each drop will have 6 sessions of 31,415,927 SEL tokens over the span of 4.5 years. Each session will last as long as 3 months.\n\nUse '/distribution' to see active airdrops, use '/airdrop' for more info on airdrops."
         else:
             pass
+        
+    if "completed" in user_message:
+        if "form" in user_message:
+            if "nothing" in user_message:
+                return ad_troubeshoot
     # withdraw messages
     if "how" in user_message:
         if "withdraw" in user_message:
-            return "$SEL does not currently support withdrawls, in the mean time you can:\n\n- Invite your friends to join the community. Tell them to go claim SEL on airdrop.selendra.org\n- Discuss ideas and think of way to build dapps on Selendra by using docs.selendra.org, if you are a developer."
+            return "$SEL does not currently support withdrawls, in the mean time you can:\n\n- Invite your friends to join the community. Tell them to go claim SEL on airdrop.selendra.org\n\n- Discuss ideas and think of way to build dapps on Selendra by using docs.selendra.org, if you are a developer."
         else: 
             pass   
     
@@ -166,6 +171,10 @@ def main_listener(input_text):
                     return presale
             if "start" in user_message:
                 return presale
+        if "is" in user_message:
+            if "secure" in user_message:
+                if "contract" in user_message:
+                    return sc
         
     else:
         pass
@@ -196,6 +205,11 @@ def main_listener(input_text):
                 return more_info
             if "information" in user_message:
                 return more_info
+        if "read" in user_message:
+            if "info" in user_message:
+                return more_info
+            if "information" in user_message:
+                return more_info
     else:
         pass
     
@@ -204,6 +218,15 @@ def main_listener(input_text):
         if "everything" in user_message:
             if "nothing" in user_message:
                 return failed
+            
+    #when
+    if "when" in user_message:
+        if "presale" in user_message:
+            if "going" in user_message:
+                if "happen" in user_message:
+                    return presale
+            if "start" in user_message:
+                return presale
     
     # single words
     if len(user_message) <= 6:
@@ -234,3 +257,11 @@ def main_listener(input_text):
     if len(user_message) <= 5:
         if "help" in user_message:
             return "You can use /help for a list of helpful commands, or ask your question here and I will do my best to answer it."
+        
+    if len(user_message) <= 9:
+        if "consensus" in user_message:
+            return consensus
+    
+    if len(user_message) <= 11:
+        if "governence" in user_message:
+            return governance
