@@ -11,7 +11,7 @@ print ("Bot session has begun")
 # Adding an about SEL command 
 def about_command(update, context):
     
-    update.message.reply_text("Selendra is a blockchain network built with Substrate framework that support the building of business use-cases with developability and interoperability for developers to launch their applications in a decentralized manner with minimal learning curve.")
+    update.message.reply_text(what_is)
     
 def faq_command(update, context):
     update.message.reply_text("Welcome to the FAQ section please visit 'https://bit.ly/3byM9wc' for more info ")
@@ -24,7 +24,7 @@ def distro_command(update, context):
 # Creating a help command 
 def help_command(update, context):
     # Displaying all useful commands
-    update.message.reply_text('Here is a list of helpful commands: \n\n -/airdrop Up to date info on airdrops\n-/distribution Airdrop disribution status\n-/about About selendra\n-/faq FAQ section')
+    update.message.reply_text('Here is a list of helpful commands: \n\n -/airdrop Up to date info on airdrops\n-/distribution Airdrop disribution status\n-/about About selendra\-/whitepaper docs and official whitepaper\n-/bitriel download bitriel and how to use tutorial\n-/price join the official price dicussion group-/faq FAQ section')
 
 # Airdrop_command 
 def airdrop_command(update, context):

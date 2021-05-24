@@ -13,3 +13,4 @@ sc = "Here is the $SEL SmartContract address “0x288d3a87a87c284ed685e0490e5c4c
 white_paper = "Hey there, you can read the Selendra Blockchain whitepaper here: https://t.me/selendraorg/6115"
 bitriel = "Hey there, you can download the bitriel app here: https://play.google.com/store/apps/details?id=com.selendra.secure_wallet.\n\nHere is a video showing how to claim an airdrop via the bitriel wallet: https://t.me/selendraorg/696"
 price = "We don't allow price talk in the community, however for our official price discussion you can head over here: https://t.me/seltrade"
+what_is = "Selendra is a micro-economic transactional system, a global network of people and organizations whose growth and success are made possible through the value-added contributions, deployment, and usage by and for network participants."
