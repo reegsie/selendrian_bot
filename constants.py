@@ -1,3 +1,0 @@
-#!/usr/bin/python
-
-API_KEY = '1789987922:AAG3rbSNp2TVw854JOY8dZDR44BQdHpQD80'
