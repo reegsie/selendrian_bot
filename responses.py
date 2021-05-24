@@ -7,10 +7,11 @@ def main_listener(input_text):
     
     # Taking user input
     user_message = str(input_text).lower()
-    # takes the first char's of the user_message to verify bot tagged T / F
-    # tag = user_message[0:14]
-    # Saves the str after char 14 for the user query to the bot
-    # user_query = user_message[14:65]
+    
+    # who is selendrian
+    if "selendrian" in user_message:
+        if "who" in user_message:
+            return "I am your virtual assistant for all things related to the Selendra Blockchain project :-)"
     
     #what is
     if "what" in user_message:
@@ -27,14 +28,6 @@ def main_listener(input_text):
     if "not" in user_message:
         if "listing" in user_message:
             pass
-        
-    # Sell request
-    if "anyone" in user_message:
-        if "buy" in user_message:
-            if "my" in user_message:
-                return "we recommend holding onto your SEL for now"
-    else:
-        pass 
     
     # Recieved no airdrop
     if "received" in user_message:
@@ -93,7 +86,8 @@ def main_listener(input_text):
     if "airdrop" in user_message: 
         if "when" in user_message: 
             return "We will conduct 3 airdrops, each drop will have 6 sessions of 31,415,927 SEL tokens over the span of 4.5 years. Each session will last as long as 3 months. Use '/distribution' to see active airdrops, use '/airdrop' for more info on airdrops."
-        
+        else:
+            pass
     # withdraw messages
     if "how" in user_message:
         if "withdraw" in user_message:
@@ -107,6 +101,12 @@ def main_listener(input_text):
             return "Ladies and gentlman please fasten your seatbelts and siten your caps, we're just starting our engines, take off in 3... 2..."  
     else: 
         pass
+    
+    if "anyone" in user_message:
+        if "want" in user_message:
+            if "buy" in user_message:
+                return sell
+            
     
     #transaction info
     if "transaction" in user_message:
@@ -157,6 +157,13 @@ def main_listener(input_text):
                 return governance
             if "role" in user_message:
                 return governance
+        if "presale" in user_message:
+            if "going" in user_message:
+                if "happen" in user_message:
+                    return presale
+            if "start" in user_message:
+                return presale
+        
     else:
         pass
     
@@ -181,6 +188,34 @@ def main_listener(input_text):
                 return more_info
             if "information" in user_message:
                 return more_info
+        if "get" in user_message:
+            if "info" in user_message:
+                return more_info
+            if "information" in user_message:
+                return more_info
     else:
         pass
     
+    # Who
+    if "who" in user_message:
+        if "everything" in user_message:
+            if "nothing" in user_message:
+                return failed
+    
+    # single words
+    if len(user_message) <= 6:
+        if "price" in user_message:
+            return "Hi there, we don't permit 'price' talk in this group, if you want you can go to this channel: https://t.me/seltrade for price talk :-)" 
+        if "sc" in user_message:
+            return "0x288d3A87a87C284Ed685E0490E5C4cC0883a060a"
+    if len(user_message) <= 14:
+        if "smartcontract" in user_message:
+            return sc
+    else:
+        pass
+    
+    if "hello" in user_message:
+        return "Hi welcome to the Selendra Blockchain Community, /help if you need help!"
+    if len(user_message) <= 2:
+        if "hi" in user_message:
+            return "Hi welcome to the Selendra Blockchain Community, /help if you need help!"
