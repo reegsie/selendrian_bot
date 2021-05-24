@@ -227,3 +227,7 @@ def main_listener(input_text):
             return "Yes it is, to read more '/whitepaper'"
         else:
             pass
+        
+    if len(user_message) <= 5:
+        if "help" in user_message:
+            return "You can use /help for a list of helpful commands, or ask your question here and I will do my best to answer it."
