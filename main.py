@@ -41,6 +41,9 @@ def docs_command(update, context):
 def bitriel_command(update, context):
     update.message.reply_text(bitriel)
     
+def scam_coin_command(update, context):
+    update.message.reply_text(scam)
+    
 # price_command
 def price_command(update, context):
     update.message.reply_text(price)
@@ -82,6 +85,8 @@ def main():
     dp.add_handler(CommandHandler("price", price_command))
     # docs handler
     dp.add_handler(CommandHandler("docs", docs_command))
+    #scam coin link
+    dp.add_handler(CommandHandler("scamcoin", scam_coin_command))
     
     dp.add_handler(MessageHandler(Filters.text, handle_message))
     dp.add_error_handler(error)

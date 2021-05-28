@@ -64,7 +64,7 @@ def main_listener(input_text):
     # Exchange the token
     if "exchange" in user_message:
         if "token" in user_message:
-            return "Token won't be listed on any exchange until around late Ausgust or worst Nov 2021. The reason is that we more p[eople to b e able to claimn SEL Airdrop. If this is too long for anyone to wait, feel free to brn your SEL :) \n \n$SEL will be on #Pancakeswap, #BitrielSwap, #LAToken, and #Binance. We will work with a small number of exchanges."
+            return "Token won't be listed on any exchange until around late August or November 2021. The reason is that we need more p[eople to b e able to claim SEL Airdrop. If this is too long for anyone to wait, feel free to burn your SEL :) \n \n$SEL will be on #Pancakeswap, #BitrielSwap, #LAToken, and #Binance. We will work with a small number of exchanges."
         else:
             pass
     if "officially" in user_message:
@@ -133,7 +133,7 @@ def main_listener(input_text):
     if "what" in user_message:
         if "total" in user_message:
             if "supply" in user_message:
-                return benefits
+                return supply
         if "tokens" in user_message:
             if "distribution" in user_message:
                 if "model" in user_message:
@@ -183,13 +183,13 @@ def main_listener(input_text):
     if "how" in user_message:
         if "does" in user_message:
             if "reward" in user_message:
-                return benefits
+                return rewards
         if "do" in user_message:
             if "reward" in user_message:
-                return benefits
+                return rewards
         if "tokens" in user_message:
             if "distributed" in user_message:
-                return benefits
+                return rewards
     else:
         pass
     
