@@ -190,7 +190,7 @@ def main_listener(input_text):
         if "tokens" in user_message:
             if "distributed" in user_message:
                 return rewards
-        if "recieve" in user_message:
+        if "receive" in user_message:
             if "token" in user_message:
                 return claim_vids
         if "register" in user_message:
