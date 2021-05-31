@@ -200,6 +200,9 @@ def main_listener(input_text):
         if "apply" in user_message:
             if "airdrop" in user_message:
                 return claim_vids
+        if "claim" in user_message:
+            if "SEL" in user_message:
+                return claim_vids
             
     else:
         pass
