@@ -28,7 +28,7 @@ def help_command(update, context):
 
 # Airdrop_command 
 def airdrop_command(update, context):
-    update.message.reply_text('Hey there watch your head, Selendra airdrops are inbound. To check on the airdrop disrobution status "/distribution" to get any more information about the airdrop "airdrop.selendra.org".')
+    update.message.reply_text('Hey there watch your head, Selendra airdrops are inbound. To check on the airdrop distribution status "/distribution" to get any more information about the airdrop "airdrop.selendra.org".')
 
 # white_paper command
 def white_command(update, context):
