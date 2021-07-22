@@ -64,17 +64,17 @@ def main_listener(input_text):
     # Exchange the token
     if "exchange" in user_message:
         if "token" in user_message:
-            return "Token won't be listed on any exchange until around late August or November 2021. The reason is that we need more p[eople to b e able to claim SEL Airdrop. If this is too long for anyone to wait, feel free to burn your SEL :) \n \n$SEL will be on #Pancakeswap, #BitrielSwap, #LAToken, and #Binance. We will work with a small number of exchanges."
+            return "Token won't be listed on any exchange until around late August or November 2021. The reason is that we need more people to b e able to claim SEL Airdrop. If this is too long for anyone to wait, feel free to burn your SEL :) \n \n$SEL will be doing it's IDO on #Selendraswap and #Pancakeswap."
         else:
             pass
     if "officially" in user_message:
         if "listed" in user_message: 
-            return "Token won't be listed on any exchange until around late Ausgust or worst Nov 2021. The reason is that we more p[eople to b e able to claimn SEL Airdrop. If this is too long for anyone to wait, feel free to brn your SEL :) \n \n$SEL will be on #Pancakeswap, #BitrielSwap, #LAToken, and #Binance. We will work with a small number of exchanges."
+            return "Token won't be listed on any exchange until around late Ausgust or worst Nov 2021. The reason is that we more p[eople to b e able to claimn SEL Airdrop. If this is too long for anyone to wait, feel free to brn your SEL :) \n \n$SEL will be doing it's IDO on #Selendraswap and #Pancakeswap."
     else:
         pass
     if "when" in user_message:
         if "listed" in user_message: 
-            return "Token won't be listed on any exchange until around late Ausgust or worst Nov 2021. The reason is that we more p[eople to b e able to claimn SEL Airdrop. If this is too long for anyone to wait, feel free to brn your SEL :) \n \n$SEL will be on #Pancakeswap, #BitrielSwap, #LAToken, and #Binance. We will work with a small number of exchanges."
+            return "Token won't be listed on any exchange until around late Ausgust or worst Nov 2021. The reason is that we more p[eople to b e able to claimn SEL Airdrop. If this is too long for anyone to wait, feel free to brn your SEL :) \n \n$SEL will be doing it's IDO on #Selendraswap and #Pancakeswap."
     else:
         pass
     
